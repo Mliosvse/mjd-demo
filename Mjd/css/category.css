@@ -1,0 +1,78 @@
+body{
+    width: 100%;
+    background: #ffffff;
+}
+
+/*左部导航栏*/
+.category-main{
+    width: 100%;
+    overflow: hidden;
+}
+.category-left{
+    width: 76px;
+    /*height: 100%;*/
+    float: left;
+    /*overflow: hidden;*/
+}
+.category-left ul{
+    width: 100%;
+}
+.category-left ul li{
+     width: 100%;
+     height: 46px;
+     line-height: 46px;
+    border-bottom: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+ }
+.category-left ul li.current a{
+    color: #f23030;
+}
+.category-left ul li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #2d2d2d;
+    text-align: center;
+}
+.category-right{
+    float: right;
+    width: calc(100% - 76px);
+    padding: 10px;
+    background: rgb(243, 245, 247);
+}
+.category-right .category-right-banner img{
+    width: 100%;
+}
+
+.category-right .category-section{
+    width: 100%;
+    margin-top: 5px;
+}
+
+.category-right .category-section h5{
+    font-weight: normal;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+.category-right .category-section ul{
+    background: #fff;
+    padding: 10px;
+}
+.category-right .category-section ul li{
+    width: calc(100% / 3);
+    float: left;
+}
+.category-right .category-section ul li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+.category-right .category-section ul li a img{
+    width: 90%;
+}
+.category-right .category-section ul li a p{
+    color: #2d2d2d;
+}

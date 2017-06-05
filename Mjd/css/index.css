@@ -1,0 +1,355 @@
+.viewport{
+    min-width: 300px;
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+}
+/*头部部分*/
+.viewport .mjd-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.viewport .header-bar{
+    min-width: 300px;
+    max-width: 640px;
+    background: rgba(201,21,35,0);
+    margin: 0 auto;
+}
+
+.viewport .header-bar form{
+    padding-left: 80px;
+    padding-right: 60px;
+}
+
+.viewport .header-bar a{
+    width: 60px;
+    text-align: center;
+    height: 44px;
+    line-height: 44px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.icon-logo{
+    width: 60px;
+    height: 30px;
+    background-position: 0 -103px;
+    position: absolute;
+    left: 10px;
+    top: 7px;
+}
+.icon-search{
+    left: 90px;
+    top: 12px;
+}
+/*banner轮播部分*/
+.viewport .mjd-banner{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.mjd-banner ul{
+    width: 1000%;
+    transform: translateX(-10%);
+}
+.mjd-banner ul li{
+    width: 10%;
+    float: left;
+}
+.mjd-banner ul li img{
+    width: 100%;
+}
+.mjd-banner ol{
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,-30%);
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+.mjd-banner ol li{
+    width: 10px;
+    height: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+}
+.mjd-banner ol li.current{
+    background: #ffffff;
+}
+/*分类菜单*/
+.viewport .mjd-categres{
+    width: 100%;
+    padding: 10px 0;
+}
+.viewport .mjd-categres ul{
+    width: 100%;
+}
+.viewport .mjd-categres ul li{
+    width: 20%;
+    float: left;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.viewport .mjd-categres ul li img{
+    width: 40px;
+    height: 40px;
+}
+.viewport .mjd-categres ul li p{
+    color: #333;
+}
+/*秒杀部分*/
+.viewport .mjd-secondkill{
+    width: 100%;
+    background:#fff;
+}
+
+.mjd-secondkill .sdkill-header{
+    width: 100%;
+    height: 36px;
+}
+.mjd-secondkill .sdkill-header .sdkill-header-left{
+    width: 70%;
+    height: 36px;
+    vertical-align: middle;
+    float: left;
+}
+.sdkill-header .sdkill-header-left img{
+    width: 69px;
+    height: 27px;
+    margin-top: 6px;
+    float: left;
+}
+.sdkill-header .sdkill-header-left strong{
+    float: left;
+    line-height: 36px;
+    margin-left: 10px;
+}
+.sdkill-header .sdkill-header-left .time{
+    float: left;
+    height: 36px;
+    margin-left: 10px;
+}
+.sdkill-header-left .time span{
+    display: block;
+    float: left;
+    line-height: 36px;
+}
+.sdkill-header-left .time span.count{
+    border: 1px solid #e0e0e0;
+    height: 22px;
+    line-height: 22px;
+    margin-top: 7px;
+    font-size: 12px;
+}
+.mjd-secondkill .sdkill-header .sdkill-header-right{
+    width: 30%;
+    height: 36px;
+    float: right;
+    color: rgba(201,21,35,1);
+    line-height: 36px;
+    text-align: right;
+    position: relative;
+    padding-right:28px;
+}
+.sdkill-header .sdkill-header-right:after{
+    content: '';
+    display: block;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    background: url("../images/arrow_rt.png") no-repeat;
+    -webkit-background-size: 12px 12px;
+    background-size: 12px 12px;
+    width: 12px;
+    height: 12px;
+}
+.sdkill-content{
+    width: 100%;
+}
+
+.sdkill-content ul{
+    width: 100%;
+}
+
+.sdkill-content ul li{
+    width: calc(100%/3);
+    float: left;
+    padding: 10px;
+    text-align: center;
+}
+.sdkill-content ul li img{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+.sdkill-content ul li strong{
+    color: rgba(201,21,35,1);
+}
+.sdkill-content ul li p{
+    text-decoration: line-through;
+}
+
+/*主题产品样式*/
+.mjd-main{
+
+}
+.product-section{
+    width: 100%;
+    background: #ffffff;
+    margin-top: 10px;
+}
+.product-header{
+    width: 100%;
+    height: 36px;
+}
+.product-header span{
+    width: 5px;
+    height: 26px;
+    background:rgba(201,21,35,.9);
+    display: block;
+    float: left;
+    margin:5px 6px;
+}
+.product-header h3{
+    line-height: 36px;
+}
+.product-section ul{
+    width: 100%;
+    border: 1px solid #e0e0e0;
+}
+.product-section ul li{
+    width: 50%;
+}
+
+.product-section ul li img{
+    width: 100%;
+    display: block;
+}
+/*主题产品公共样式*/
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.bb{
+    border-bottom: 1px solid #e0e0e0;
+}
+.br{
+    border-right: 1px solid #e0e0e0;
+}
+/*为你推荐部分*/
+.mjd-recommend{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+.mjd-recommend .recommend-header{
+    width: 100%;
+    height: 10px;
+    border-top:1px solid #ccc;
+    position: relative;
+}
+
+.mjd-recommend .recommend-header span{
+    width: 100px;
+    height: 30px;
+    text-align: right;
+    padding: 0 10px;
+    line-height: 30px;
+    position: absolute;
+    background: #f3f3f3;
+    left: 50%;
+    top:0;
+    transform: translate(-50%,-50%);
+}
+.mjd-recommend .recommend-header .recommend-header-tip{
+    position: absolute;
+    background: url("../images/intro_arrow.png") no-repeat;
+    background-size:16px 16px;
+    width: 16px;
+    height: 16px;
+    left: 20px;
+    top: 16px;
+}
+.mjd-recommend ul{
+    width: 100%;
+}
+.mjd-recommend ul li{
+    background: #ffffff;
+    float: left;
+    margin-top: 10px;
+    width: 49%;
+}
+.mjd-recommend ul li:nth-child(2n){
+    margin-left: 2%;
+}
+.mjd-recommend ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mjd-recommend ul li img{
+    width: 98%;
+}
+.mjd-recommend ul li p{
+    height: 38px;
+    padding: 5px 10px;
+    line-height: 18px;
+    overflow: hidden;
+    /*white-space: nowrap;*/
+    /*text-overflow: ellipsis;*/
+}
+.mjd-recommend ul li h3{
+    height: 36px;
+    line-height: 36px;
+    padding-left: 10px;
+    color: red;
+    position: relative;
+}
+.mjd-recommend ul li h3 a{
+    width: 50px;
+    height: 26px;
+    padding-right:1px;
+    font-size: 12px;
+    font-weight:normal;
+    color: #666;
+    border: 1px solid #e0e0e0;
+    position: absolute;
+    top: 4px;
+    right: 10px;
+}
+
+/*页脚部分*/
+.mjd-footer{
+    position: fixed;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    background: #f3f3f3;
+}
+.mjd-footer ul{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    border-top: 1px solid #e0e0e0;
+    box-shadow: 0 -2px 2px #ccc;
+}
+.mjd-footer ul li{
+    width: 20%;
+    height: 50px;
+    text-align: center;
+}
+
+.mjd-footer ul li img{
+    width: 65px;
+    height: 50px;
+}
